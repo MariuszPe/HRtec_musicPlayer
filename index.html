@@ -4,19 +4,44 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
+  <title>testowa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
 
 </head>
 
 <body>
-  <div id="container"></div>
 
+  <div id=container>
+    <div class='rectangle rectangle__backgroundPlaylist'>
+      <div class='rectangle__background--Top playerTop'>
+        <i class='fas fa-retweet'></i>
+        <i class='fas fa-random'></i>
+        <i class='fas fa-redo'></i>
+        <i id='navigateToPlaylist' class="fas fa-bars"></i>
+      </div>
+      <div class='rectangle__background--Top playerMiddle'></div>
+      <div class="rectangle__background--progresBar">
+        <progress id="progresBar" max="100" value="80"></progress>
+      </div>
+      <div class="rectangle__background--playerControl">
+        <i class='fas fa-share-alt'></i>
+        <i id="prev" class="fas fa-step-backward"></i>
+        <i id="play" class="fas fa-play"></i>
+        <i id="next" class="fas fa-step-forward"></i>
+        <i class='fas fa-heart'></i>
+
+      </div>
+    </div>
+  </div>
 
 
   <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="scripts/songlistJS.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
   <script src="scripts/script.js"></script>
 </body>
 
